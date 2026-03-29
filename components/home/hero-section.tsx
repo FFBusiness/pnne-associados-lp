@@ -19,18 +19,20 @@ export function HeroSection() {
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
             Rigor técnico, celeridade processual e acompanhamento personalizado — ao serviço da recuperação que merece.
           </p>
-          <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-primary-foreground/70">
+          {/* <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-primary-foreground/70">
             Inscrita na OSAE com o número 128, com sede em Barcelos e atuação em todo o território nacional.
-          </p>
+          </p>*/}
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button asChild size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+            {/* <Button asChild size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
               <Link href="/contactos">
                 Entrar em Contacto
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
-            </Button>
+            </Button>*/}
             <Button asChild size="lg" variant="outline" className="border-primary-foreground/40 text-primary hover:bg-primary-foreground/10 hover:text-primary-foreground">
-              <Link href="/servicos">Conhecer Serviços</Link>
+              <Link href="/servicos">Conhecer Serviços
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
             </Button>
           </div>
         </div>
