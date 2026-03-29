@@ -32,13 +32,7 @@ const team = [
     role: 'Agente de Execução',
     cedula: 'Cédula Profissional n.º 6662',
     bio: 'Advogado e Agente de Execução desde outubro de 2013. Sócio fundador, a sua formação jurídica dupla confere à equipa uma perspetiva aprofundada sobre cada processo.',
-  },
-  {
-    name: 'A. Amorim Carvalho',
-    role: 'Agente de Execução',
-    cedula: 'Cédula Profissional n.º 5166',
-    bio: 'Solicitador e jurista, integra a sociedade desde outubro de 2011. Com a experiência mais longa da equipa, garante solidez e maturidade processual em qualquer tipo de ação executiva.',
-  },
+  }, s
 ]
 
 export default function SociedadePage() {
