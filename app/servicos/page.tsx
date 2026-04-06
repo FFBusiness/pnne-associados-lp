@@ -45,7 +45,7 @@ export default function ServicosPage() {
       <PageHeader
         title="Serviços"
         description="Competência técnica ao serviço da recuperação processual. Atuamos em todo o território nacional."
-        imageSrc="/images/assinar.webp"
+        imageSrc="/images/servicos-2.webp"
       />
 
       {/* Services List */}

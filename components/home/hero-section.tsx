@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
-import heroImage from '@/public/images/justica.webp'
+import heroImage from '@/public/images/hero-justice.webp'
 import { LcpImagePreload } from '@/components/lcp-image-preload'
 
 export function HeroSection() {

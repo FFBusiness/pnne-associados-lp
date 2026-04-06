@@ -40,7 +40,7 @@ export default function SociedadePage() {
     <>
       <PageHeader
         title="Sociedade"
-        imageSrc="/images/analisar.webp"
+        imageSrc="/images/sociedade-2.webp"
         description="Conheça quem somos, a nossa missão, valores e a equipa que dá vida à sociedade."
       />
 
