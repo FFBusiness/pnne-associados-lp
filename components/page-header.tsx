@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { DECORATIVE_IMAGE_BLUR } from '@/lib/image-blur'
+import { LcpImagePreload } from '@/components/lcp-image-preload'
 
 interface PageHeaderProps {
   title: string
@@ -25,15 +26,18 @@ export function PageHeader({
     >
       {imageSrc && (
         <>
+          <LcpImagePreload href={imageSrc} />
           <Image
             src={imageSrc}
             alt={imageAlt}
             fill
             className="object-cover"
-            sizes="100vw"
+            sizes="(max-width: 1920px) 100vw, 1920px"
             priority
+            fetchPriority="high"
             placeholder="blur"
             blurDataURL={DECORATIVE_IMAGE_BLUR}
+            quality={75}
           />
           <div
             className="absolute inset-0 z-[1] bg-primary/80 backdrop-blur-[1px]"
