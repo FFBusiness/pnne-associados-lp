@@ -37,6 +37,7 @@ export default function ContactosPage() {
       <PageHeader
         title="Contactos"
         description="Estamos disponíveis para si. Todas as comunicações são tratadas com discrição e respondidas com brevidade."
+        imageSrc="/images/contactos-2.webp"
       />
 
       {/* Contact Section */}

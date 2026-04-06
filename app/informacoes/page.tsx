@@ -65,6 +65,7 @@ export default function InformacoesPage() {
     <>
       <PageHeader
         title="Informações Úteis"
+        imageSrc="/images/libraria.webp"
         description="Informação clara para decisões mais seguras. Esclareça as suas dúvidas sobre processos executivos."
       />
 

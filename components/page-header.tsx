@@ -31,18 +31,21 @@ export function PageHeader({
             priority
           />
           <div
-            className="absolute inset-0 bg-background/80 backdrop-blur-[2px]"
+            className="absolute inset-0 z-[1] bg-primary/80 backdrop-blur-[1px]"
             aria-hidden
           />
+          <div className="pointer-events-none absolute inset-0 z-[2] opacity-10" aria-hidden>
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff15_1px,transparent_1px),linear-gradient(to_bottom,#ffffff15_1px,transparent_1px)] bg-[size:3rem_3rem]" />
+          </div>
         </>
       )}
-      <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-primary-foreground">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
             {title}
           </h1>
           {description && (
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-primary-foreground/85 sm:text-lg">
               {description}
             </p>
           )}

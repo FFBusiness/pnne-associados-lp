@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden text-primary-foreground">
       <Image
-        src="/images/tingey-injury-law.webp"
+        src="/images/justica.webp"
         alt=""
         fill
         className="z-0 object-cover"
@@ -23,9 +23,9 @@ export function HeroSection() {
       </div>
       <div className="relative z-10 mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto max-w-3xl text-center">
-          <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-primary-foreground/10">
+          {/* <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-primary-foreground/10">
             <Scale className="h-7 w-7" />
-          </div>
+          </div>*/}
           <h1 className="text-pretty text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
             Patrícia Nibra, Nuno Esteves & Associados
           </h1>
