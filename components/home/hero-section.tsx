@@ -33,7 +33,10 @@ export function HeroSection() {
             <Scale className="h-7 w-7" />
           </div>*/}
           <h1 className="text-pretty text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
-            Patrícia Nibra, Nuno Esteves & Associados
+            Patrícia Nibra, Nuno Esteves 
+            <br />
+            & <br />
+            Associados
           </h1>
           <p className="mt-4 text-lg font-medium text-primary-foreground/90 sm:text-xl">
             Sociedade de Agentes de Execução, SP, RL
@@ -52,7 +55,7 @@ export function HeroSection() {
               </Link>
             </Button>*/}
             <Button asChild size="lg" variant="outline" className="border-primary-foreground/40 text-primary hover:bg-primary-foreground/10 hover:text-primary-foreground">
-              <Link href="/servicos">Conhecer Serviços
+              <Link href="/contactos">Entrar em Contacto
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
