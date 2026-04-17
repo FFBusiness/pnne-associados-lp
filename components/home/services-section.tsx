@@ -1,28 +1,38 @@
-import Link from 'next/link'
-import { ArrowRight, Gavel, FileStack, Send, MessageCircleQuestion } from 'lucide-react'
+import Link from "next/link";
+import {
+  ArrowRight,
+  Gavel,
+  FileStack,
+  Send,
+  MessageCircleQuestion,
+} from "lucide-react";
 
 const services = [
   {
     icon: Gavel,
-    title: 'Agente de Execução',
-    description: 'Condução integral de processos executivos cíveis, desde as diligências iniciais até ao encerramento, em estrita observância do Código de Processo Civil.',
+    title: "Agente de Execução",
+    description:
+      "Condução integral de processos executivos, desde as diligências iniciais até ao encerramento, em estrita observância da Lei.",
   },
   {
     icon: FileStack,
-    title: 'Tramitação Processual',
-    description: 'Gestão rigorosa de todas as fases do processo: consultas de bases de dados, penhoras, vendas e pagamentos, com comunicação regular ao mandatário.',
+    title: "Tramitação Processual",
+    description:
+      "Gestão rigorosa de todas as fases do processo: consultas de bases de dados, penhoras, vendas e pagamentos, com comunicação regular ao mandatário.",
   },
   {
     icon: Send,
-    title: 'Notificações e Citações',
-    description: 'Realização de atos de notificação e citação com cumprimento escrupuloso das formalidades legais e dos prazos processuais aplicáveis.',
+    title: "Notificações e Citações",
+    description:
+      "Realização de atos de notificação e citação com cumprimento escrupuloso das formalidades legais e dos prazos processuais aplicáveis.",
   },
   {
     icon: MessageCircleQuestion,
-    title: 'Apoio / Esclarecimento',
-    description: 'Esclarecimento de dúvidas de mandatários, credores e demais intervenientes sobre o andamento dos processos e os direitos de cada parte.',
+    title: "Apoio / Esclarecimento",
+    description:
+      "Esclarecimento de dúvidas de mandatários, credores e demais intervenientes sobre o andamento dos processos e os direitos de cada parte.",
   },
-]
+];
 
 export function ServicesSection() {
   return (
@@ -34,7 +44,9 @@ export function ServicesSection() {
               Os Nossos Serviços
             </h2>
             <p className="mt-3 max-w-2xl text-base text-muted-foreground">
-              Competência técnica ao serviço da recuperação processual. Atuamos em todo o território nacional com rigor, imparcialidade e total conformidade com a legislação portuguesa.
+              Competência ao serviço da recuperação processual. Atuamos em todo
+              o território nacional com rigor, imparcialidade e total
+              conformidade com a legislação portuguesa.{" "}
             </p>
           </div>
           <Link
@@ -68,5 +80,5 @@ export function ServicesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

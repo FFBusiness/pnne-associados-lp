@@ -1,9 +1,9 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { ArrowRight } from 'lucide-react'
-import heroImage from '@/public/images/hero-justice.webp'
-import { LcpImagePreload } from '@/components/lcp-image-preload'
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import heroImage from "@/public/images/hero-justice.webp";
+import { LcpImagePreload } from "@/components/lcp-image-preload";
 
 export function HeroSection() {
   return (
@@ -33,7 +33,7 @@ export function HeroSection() {
             <Scale className="h-7 w-7" />
           </div>*/}
           <h1 className="text-pretty text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
-            Patrícia Nibra, Nuno Esteves 
+            Patrícia Nibra, Nuno Esteves
             <br />
             & <br />
             Associados
@@ -42,7 +42,8 @@ export function HeroSection() {
             Sociedade de Agentes de Execução, SP, RL
           </p>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
-            Rigor técnico, celeridade processual e acompanhamento personalizado — ao serviço da recuperação que merece.
+            Competência, celeridade processual e acompanhamento personalizado -
+            ao serviço da recuperação processual.
           </p>
           {/* <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-primary-foreground/70">
             Inscrita na OSAE com o número 128, com sede em Barcelos e atuação em todo o território nacional.
@@ -54,8 +55,14 @@ export function HeroSection() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>*/}
-            <Button asChild size="lg" variant="outline" className="border-primary-foreground/40 text-primary hover:bg-primary-foreground/10 hover:text-primary-foreground">
-              <Link href="/contactos">Entrar em Contacto
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
+            >
+              <Link href="/contactos">
+                Entrar em Contacto
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
@@ -63,5 +70,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

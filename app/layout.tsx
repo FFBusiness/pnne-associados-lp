@@ -1,31 +1,33 @@
-import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
-import './globals.css'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
+import type { Metadata, Viewport } from "next";
+import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
-  variable: '--font-inter'
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-  title: 'Patrícia Nibra & Nuno Esteves | Sociedade de Agentes de Execução',
-  description: 'Sociedade de Agentes de Execução especializada em processos executivos. Rigor, experiência e acompanhamento profissional.',
-  keywords: 'agentes de execução, processos executivos, tramitação processual, notificações, citações, Portugal',
-}
+  title:
+    "Patrícia Nibra, Nuno Estves & Associados SP RL - Sociedade de Agentes de Execução",
+  description:
+    "Sociedade de Agentes de Execução  - Competência, Rigor, Celeridade e acompanhamento profissional.",
+  keywords: "Acrescentar: Execuções, Cobranças",
+};
 
 export const viewport: Viewport = {
-  themeColor: '#1e3a5f',
-  width: 'device-width',
+  themeColor: "#1e3a5f",
+  width: "device-width",
   initialScale: 1,
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="pt">
@@ -36,5 +38,5 @@ export default function RootLayout({
         <Analytics />
       </body>
     </html>
-  )
+  );
 }

@@ -1,35 +1,42 @@
-import { Metadata } from 'next'
-import { PageHeader } from '@/components/page-header'
-import { ContactForm } from '@/components/contact-form'
-import { Phone, Mail, MapPin, Clock } from 'lucide-react'
+import { Metadata } from "next";
+import { PageHeader } from "@/components/page-header";
+import { ContactForm } from "@/components/contact-form";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: 'Contactos | Patrícia Nibra & Nuno Esteves',
-  description: 'Entre em contacto com a nossa sociedade de agentes de execução. Estamos disponíveis para esclarecer as suas dúvidas.',
-}
+  title: "Contactos | Patrícia Nibra & Nuno Esteves",
+  description:
+    "Entre em contacto com a nossa sociedade de agentes de execução. Estamos disponíveis para esclarecer as suas dúvidas.",
+};
 
 const contactInfo = [
   {
     icon: MapPin,
-    title: 'Morada',
-    details: ['Largo Doutor José Novais, 134, 1.º Esq.', '4750-310 Barcelos'],
+    title: "Morada",
+    details: [
+      "Rua D. Diogo Pinheiro, n.º 95, 1.º andar, Sala 102",
+      "4750-282 Barcelos",
+    ],
   },
   {
     icon: Phone,
-    title: 'Telefone',
-    details: ['253 814 274'],
+    title: "Telefone",
+    details: ["253 814 274"],
   },
   {
     icon: Mail,
-    title: 'Email',
-    details: ['[Adicionar email]'],
+    title: "Email",
+    details: ["nibra.esteves@gmail.com"],
   },
   {
     icon: Clock,
-    title: 'Horário',
-    details: ['Segunda a Sexta: [Adicionar horário]', 'Sábado e Domingo: Encerrado'],
+    title: "Horário",
+    details: [
+      "De 2ª a 6ª Feira: das 09:00h às 13:00h e das 14:00h às 18:00h.",
+      "Sábados, Domingos e Feriados: Encerrado.",
+    ],
   },
-]
+];
 
 export default function ContactosPage() {
   return (
@@ -50,7 +57,9 @@ export default function ContactosPage() {
                 Informações de Contacto
               </h2>
               <p className="mt-3 text-muted-foreground">
-                Pode contactar-nos por qualquer um dos meios abaixo. Respondemos a todas as solicitações com brevidade e tratamos cada contacto com total confidencialidade.
+                Pode contactar-nos por qualquer um dos meios abaixo. Respondemos
+                a todas as solicitações com brevidade e tratamos cada contacto
+                com total confidencialidade.
               </p>
 
               <div className="mt-8 space-y-6">
@@ -63,13 +72,22 @@ export default function ContactosPage() {
                       <h3 className="font-semibold">{item.title}</h3>
                       <div className="mt-1 space-y-0.5">
                         {item.details.map((detail, index) => (
-                          <p key={index} className="text-sm text-muted-foreground">
-                            {item.title === 'Telefone' ? (
-                              <a href={`tel:${detail.replace(/\s/g, '')}`} className="hover:text-foreground transition-colors">
+                          <p
+                            key={index}
+                            className="text-sm text-muted-foreground"
+                          >
+                            {item.title === "Telefone" ? (
+                              <a
+                                href={`tel:${detail.replace(/\s/g, "")}`}
+                                className="hover:text-foreground transition-colors"
+                              >
                                 {detail}
                               </a>
-                            ) : item.title === 'Email' ? (
-                              <a href={`mailto:${detail}`} className="hover:text-foreground transition-colors">
+                            ) : item.title === "Email" ? (
+                              <a
+                                href={`mailto:${detail}`}
+                                className="hover:text-foreground transition-colors"
+                              >
                                 {detail}
                               </a>
                             ) : (
@@ -88,7 +106,8 @@ export default function ContactosPage() {
             <div className="rounded-xl border border-border bg-card p-6 sm:p-8">
               <h2 className="text-xl font-semibold">Envie-nos uma mensagem</h2>
               <p className="mt-2 text-sm text-muted-foreground">
-                Preencha o formulário e entraremos em contacto brevemente. Todos os dados são tratados com total confidencialidade.
+                Preencha o formulário e entraremos em contacto brevemente. Todos
+                os dados são tratados com total confidencialidade.
               </p>
               <ContactForm />
             </div>
@@ -112,5 +131,5 @@ export default function ContactosPage() {
         </div>
       </section>
     </>
-  )
+  );
 }

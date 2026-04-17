@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Phone, MapPin, ArrowRight } from 'lucide-react'
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Phone, MapPin, ArrowRight } from "lucide-react";
 
 export function ContactCta() {
   return (
@@ -12,9 +12,15 @@ export function ContactCta() {
               Entre em Contacto
             </h2>
             <p className="mt-4 text-base leading-relaxed text-primary-foreground/80 sm:text-lg">
-              Estamos disponíveis para esclarecer qualquer questão e acompanhar o seu processo. Resposta rápida e tratamento confidencial garantidos.
+              Estamos disponíveis para esclarecer qualquer questão e acompanhar
+              o seu processo. Resposta rápida e tratamento confidencial
+              garantidos.
             </p>
-            <Button asChild size="lg" className="mt-8 bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+            <Button
+              asChild
+              size="lg"
+              className="mt-8 bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+            >
               <Link href="/contactos">
                 Fale connosco
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -29,7 +35,10 @@ export function ContactCta() {
               </div>
               <div>
                 <p className="text-sm text-primary-foreground/60">Telefone</p>
-                <a href="tel:+351253814274" className="font-medium transition-colors hover:text-primary-foreground/80">
+                <a
+                  href="tel:+351253814274"
+                  className="font-medium transition-colors hover:text-primary-foreground/80"
+                >
                   253 814 274
                 </a>
               </div>
@@ -41,13 +50,17 @@ export function ContactCta() {
               </div>
               <div>
                 <p className="text-sm text-primary-foreground/60">Morada</p>
-                <p className="font-medium">Largo Doutor José Novais, 134, 1.º Esq.</p>
-                <p className="text-sm text-primary-foreground/70">4750-310 Barcelos</p>
+                <p className="font-medium">
+                  Rua D. Diogo Pinheiro, n.º 95, 1.º andar, Sala 102
+                </p>
+                <p className="text-sm text-primary-foreground/70">
+                  4750-282 Barcelos
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

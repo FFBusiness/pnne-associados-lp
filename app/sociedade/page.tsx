@@ -1,39 +1,48 @@
-import { Metadata } from 'next'
-import { PageHeader } from '@/components/page-header'
-import { Target, ShieldCheck, UserCircle } from 'lucide-react'
+import { Metadata } from "next";
+import { PageHeader } from "@/components/page-header";
+import { Target, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: 'Sociedade | Patrícia Nibra & Nuno Esteves',
-  description: 'Conheça a nossa sociedade de agentes de execução. Quem somos, a nossa missão, valores e equipa.',
-}
+  title: "Sociedade | Patrícia Nibra & Nuno Esteves",
+  description:
+    "Conheça a nossa sociedade de agentes de execução. Quem somos, a nossa missão, valores e equipa.",
+};
 
 const values = [
   {
     icon: Target,
-    title: 'Missão',
-    description: 'Assegurar a condução de processos executivos com rigor técnico, celeridade e total transparência, adaptando a nossa atuação às necessidades de cada interveniente e situação específica.',
+    title: "Missão",
+    description:
+      "Assegurar a condução de processos executivos com rigor técnico, celeridade e total transparência, adaptando a nossa atuação às necessidades de cada interveniente e situação específica.",
   },
   {
     icon: ShieldCheck,
-    title: 'Valores',
-    description: 'Rigor profissional, responsabilidade, proximidade com o cliente, confidencialidade e eficiência operacional — os pilares que orientam a nossa atuação diária.',
+    title: "Valores",
+    description:
+      "Rigor profissional, responsabilidade, proximidade com o cliente, confidencialidade e eficiência operacional - os pilares que orientam a nossa atuação diária.",
   },
-]
+];
 
 const team = [
   {
-    name: 'Patrícia Nibra',
-    role: 'Agente de Execução',
-    cedula: 'Cédula Profissional n.º 5213',
-    bio: 'Solicitadora e jurista, exerce funções como Agente de Execução desde outubro de 2013. Sócia fundadora da sociedade, alia competência técnica a uma abordagem próxima e orientada para o cliente.',
+    name: "Patrícia Nibra",
+    role: "Agente de Execução, desde 2013.",
+    cedula: "Cédula Profissional n.º 5213",
+    bio: "Agente de Execução e Solicitadora. Administradora e sócia fundadora da sociedade, alia competência jurídica e técnica, experiência profissional a uma abordagem próxima e orientada para o cliente.",
   },
   {
-    name: 'Nuno Martins Esteves',
-    role: 'Agente de Execução',
-    cedula: 'Cédula Profissional n.º 6662',
-    bio: 'Advogado e Agente de Execução desde outubro de 2013. Sócio fundador, a sua formação jurídica dupla confere à equipa uma perspetiva aprofundada sobre cada processo.',
+    name: "Nuno Martins Esteves",
+    role: "Agente de Execução desde 2013.",
+    cedula: "Cédula Profissional n.º 6662",
+    bio: "Agente de Execução e Advogado. Administrador e sócio fundador da sociedade, a sua formação jurídica, experiência profissional e técnica, confere à equipa uma perspetiva aprofundada sobre cada processo.",
   },
-]
+  {
+    name: "A. Amorim Carvalho",
+    role: "Agente de Execução, desde 2011.",
+    cedula: "Cédula Profissional n.º 5166",
+    bio: "Agente de Execução e Solicitador. Sócio da sociedade, alia sua competência jurídica, prática e técnica com experiência profissional e foco no cliente.",
+  },
+];
 
 export default function SociedadePage() {
   return (
@@ -54,13 +63,28 @@ export default function SociedadePage() {
               </h2>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
                 <p>
-                  A <strong>Patrícia Nibra, Nuno Esteves & Associados — Sociedade de Agentes de Execução, SP, RL</strong>, inscrita na OSAE com o número 128, foi constituída em 2014 e tem sede em Barcelos, exercendo a sua atividade em todo o território nacional.
+                  A sociedade{" "}
+                  <strong>
+                    Patrícia Nibra, Nuno Esteves & Associados Sociedade de
+                    Agentes de Execução, SP, RL
+                  </strong>{" "}
+                  encontra-se inscrita na OSAE com o número 128, foi constituída
+                  em 2014 e tem sede em Barcelos, exerce a sua atividade em todo
+                  o território nacional.
                 </p>
                 <p>
-                  A sociedade é composta por juristas licenciados em Solicitadoria e Direito, o que garante uma abordagem tecnicamente fundamentada em cada processo. A sua estrutura especializada e vocacionada exclusivamente para a ação executiva permite adaptar o <em>modus operandi</em> às necessidades específicas de cada interveniente.
+                  A sociedade é composta por licenciados em Solicitadoria e
+                  Direito, o que garante uma abordagem jurídica e tecnicamente
+                  eficaz em cada processo.
                 </p>
                 <p>
-                  Ao longo de mais de uma década de atividade, consolidámos uma prática orientada para a eficiência processual, a segurança jurídica das partes e a mais elevada taxa de recuperação possível dentro dos limites legais.
+                  A sua estrutura especializada e vocacionada exclusivamente
+                  para a ação executiva permite adaptar o{" "}
+                  <em>modus operandi</em> às necessidades específicas de cada
+                  interveniente, é constituída por uma equipa multidisciplinar
+                  que se distingue pelo dinamismo, pela capacidade de inovação,
+                  pela qualidade dos serviços prestados, pelo compromisso com o
+                  cliente e pela capacidade de acção.
                 </p>
               </div>
             </div>
@@ -110,32 +134,34 @@ export default function SociedadePage() {
               Equipa
             </h2>
             <p className="mt-4 text-base text-muted-foreground">
-              Uma equipa focada na gestão eficaz de processos e no acompanhamento personalizado.
+              Uma equipa focada na gestão eficaz de processos e no
+              acompanhamento personalizado.
             </p>
           </div>
 
-          <div className="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-8 sm:grid-cols-2">
+          <div className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {team.map((member) => (
               <div
                 key={member.name}
-                className="rounded-xl border border-border bg-card p-8"
+                className="rounded-xl border border-border bg-card p-8 text-center"
               >
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-primary/10">
-                    <UserCircle className="h-9 w-9 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold">{member.name}</h3>
-                    <p className="text-sm font-medium text-primary">{member.role}</p>
-                    <p className="text-xs text-muted-foreground">{member.cedula}</p>
-                  </div>
-                </div>
-                <p className="text-sm leading-relaxed text-muted-foreground">{member.bio}</p>
+                <h3 className="text-lg font-semibold leading-tight">
+                  {member.name}
+                </h3>
+                <p className="mt-2 text-pretty text-sm font-medium text-primary">
+                  {member.role}
+                </p>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  {member.cedula}
+                </p>
+                <p className="mt-4 text-pretty text-sm leading-relaxed text-muted-foreground">
+                  {member.bio}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
     </>
-  )
+  );
 }

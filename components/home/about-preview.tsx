@@ -1,27 +1,31 @@
-import { ShieldCheck, Briefcase, Handshake, FileCheck } from 'lucide-react'
+import { ShieldCheck, Briefcase, Handshake, FileCheck } from "lucide-react";
 
 const values = [
   {
     icon: ShieldCheck,
-    title: 'Rigor',
-    description: 'Cada ato processual é praticado com precisão técnica, imparcialidade e estrito cumprimento da lei.',
+    title: "Rigor",
+    description:
+      "Cada ato processual é praticado com precisão técnica, imparcialidade e estrito cumprimento da lei.",
   },
   {
     icon: Briefcase,
-    title: 'Experiência',
-    description: 'Mais de 10 anos de prática especializada na ação executiva, com juristas formados em Solicitadoria e Direito.',
+    title: "Experiência",
+    description:
+      "Mais de 10 anos de prática especializada na ação executiva, com juristas formados em Solicitadoria e Direito.",
   },
   {
     icon: Handshake,
-    title: 'Proximidade',
-    description: 'Acompanhamento direto e personalizado — o cliente tem acesso a toda a informação sobre o seu processo.',
+    title: "Proximidade",
+    description:
+      "Acompanhamento direto e personalizado - o cliente tem acesso a toda a informação sobre o seu processo.",
   },
   {
     icon: FileCheck,
-    title: 'Confiança',
-    description: 'Transparência, sigilo e responsabilidade como pilares de cada relação profissional.',
+    title: "Confiança",
+    description:
+      "Transparência, sigilo e responsabilidade como pilares de cada relação profissional.",
   },
-]
+];
 
 export function AboutPreview() {
   return (
@@ -32,10 +36,15 @@ export function AboutPreview() {
             Uma sociedade especializada. Uma equipa comprometida.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Constituída em 2014 e inscrita na OSAE com o número 128, somos uma sociedade de Agentes de Execução com sede em Barcelos e atuação em todo o território nacional. A nossa equipa é composta por juristas licenciados em Solicitadoria e Direito, garantindo o acompanhamento rigoroso de cada processo.
+            Patrícia Nibra, Nuno Esteves & Associados Sociedade de Agentes de
+            Execução, SP, RL, encontra-se inscrita na OSAE com o número 128, foi
+            constituída em 2014 e tem sede em Barcelos, exerce a sua atividade
+            em todo o território nacional.
           </p>
           <p className="mt-3 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Com foco na eficiência, transparência e na mais elevada taxa de recuperação, adaptamos a nossa atuação às necessidades específicas de cada interveniente e situação.
+            Com foco na eficiência, transparência e na mais elevada taxa de
+            recuperação, adaptamos a nossa atuação às necessidades específicas
+            de cada interveniente e situação.
           </p>
         </div>
 
@@ -57,5 +66,5 @@ export function AboutPreview() {
         </div>
       </div>
     </section>
-  )
+  );
 }

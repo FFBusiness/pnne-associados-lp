@@ -1,50 +1,61 @@
-import { Metadata } from 'next'
-import { PageHeader } from '@/components/page-header'
-import { Gavel, FileStack, Send, MessageCircleQuestion, ArrowRight } from 'lucide-react'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+import { Metadata } from "next";
+import { PageHeader } from "@/components/page-header";
+import {
+  Gavel,
+  FileStack,
+  Send,
+  MessageCircleQuestion,
+  ArrowRight,
+} from "lucide-react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: 'Serviços | Patrícia Nibra & Nuno Esteves',
-  description: 'Conheça os nossos serviços de execução: Agente de Execução, Tramitação Processual, Notificações e Citações, Apoio e Esclarecimento.',
-}
+  title: "Serviços | Patrícia Nibra & Nuno Esteves",
+  description:
+    "Conheça os nossos serviços de execução: Agente de Execução, Tramitação processual nas ações executivas, notificações e citações em processo declarativo, notificações judiciais avulsas, notificações extra-judiciais, procedimentos especiais e pré-executivos (pepex), encarregados de venda em processos de inventário e outros, Apoio jurídico.",
+};
 
 const services = [
   {
     icon: Gavel,
-    title: 'Agente de Execução',
-    description: 'Assumimos a responsabilidade pela condução integral de processos executivos cíveis, praticando todos os atos legalmente incumbidos ao Agente de Execução — desde as diligências iniciais até ao encerramento do processo — com rigor técnico e estrita observância do Código de Processo Civil.',
+    title: "Agente de Execução",
+    description:
+      "Condução integral de processos executivos cíveis, praticando todos os atos legalmente incumbidos ao Agente de Execução - desde as diligências iniciais até ao encerramento do processo - com rigor técnico e estrita observância da Lei.",
   },
   {
     icon: FileStack,
-    title: 'Tramitação Processual',
-    description: 'Gerimos todas as fases do processo executivo: consultas de bases de dados, penhoras de bens, vendas e pagamentos. Informamos regularmente os mandatários sobre o estado de cada processo, garantindo total transparência e celeridade nas respostas.',
+    title: "Tramitação Processual",
+    description:
+      "Gerimos todas as fases do processo executivo: consultas de bases de dados, penhoras de bens, vendas e pagamentos. Informamos regularmente os mandatários sobre o estado de cada processo, garantindo total transparência e celeridade nas respostas.",
   },
   {
     icon: Send,
-    title: 'Notificações e Citações',
-    description: 'Realizamos atos de notificação e citação no âmbito da ação executiva, assegurando o cumprimento escrupuloso das formalidades legais e dos prazos processuais aplicáveis.',
+    title: "Notificações e Citações",
+    description:
+      "Realizamos atos de notificações e citações no âmbito da ação executiva, declarativa e procdimentos cautelares, assegurando o cumprimento escrupuloso das formalidades legais e dos prazos processuais aplicáveis.",
   },
   {
     icon: MessageCircleQuestion,
-    title: 'Apoio e Esclarecimento',
-    description: 'Disponibilizamo-nos para esclarecer mandatários, credores e demais intervenientes sobre o andamento dos processos, os direitos e obrigações de cada parte e os procedimentos previstos na legislação em vigor.',
+    title: "Apoio e Esclarecimento",
+    description:
+      "Disponibilizamo-nos para esclarecer mandatários, credores e demais intervenientes sobre o andamento dos processos, os direitos e obrigações de cada parte e os procedimentos previstos na legislação em vigor.",
   },
-]
+];
 
 const steps = [
-  { number: '01', title: 'Receção e análise do processo' },
-  { number: '02', title: 'Início imediato das diligências' },
-  { number: '03', title: 'Execução dos atos processuais' },
-  { number: '04', title: 'Acompanhamento e comunicação contínuos' },
-]
+  { number: "01", title: "Receção e análise do processo" },
+  { number: "02", title: "Início imediato das diligências" },
+  { number: "03", title: "Execução dos atos processuais" },
+  { number: "04", title: "Acompanhamento e comunicação contínuos" },
+];
 
 export default function ServicosPage() {
   return (
     <>
       <PageHeader
         title="Serviços"
-        description="Competência técnica ao serviço da recuperação processual. Atuamos em todo o território nacional."
+        description="Competência ao serviço da recuperação processual. Atuação em todo o território nacional."
         imageSrc="/images/servicos-2.webp"
       />
 
@@ -60,9 +71,7 @@ export default function ServicosPage() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                   <service.icon className="h-6 w-6" />
                 </div>
-                <h2 className="mt-6 text-xl font-semibold">
-                  {service.title}
-                </h2>
+                <h2 className="mt-6 text-xl font-semibold">{service.title}</h2>
                 <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                   {service.description}
                 </p>
@@ -80,7 +89,10 @@ export default function ServicosPage() {
               Como Funciona
             </h2>
             <p className="mt-4 text-base text-muted-foreground">
-              Após a distribuição ou indicação de um processo, iniciamos de imediato as diligências necessárias. A nossa estrutura especializada garante celeridade, economia de custos e eficácia na recuperação — com comunicação regular em cada fase.
+              Após a distribuição ou indicação de um processo, iniciamos de
+              imediato as diligências necessárias. A nossa estrutura
+              especializada garante celeridade, economia de custos e eficácia na
+              recuperação - com comunicação regular em cada fase.
             </p>
           </div>
 
@@ -106,10 +118,15 @@ export default function ServicosPage() {
                 Precisa dos nossos serviços?
               </h2>
               <p className="mt-2 text-primary-foreground/80">
-                Contacte-nos para analisarmos a sua situação. Respondemos com brevidade e discrição.
+                Contacte-nos para analisarmos a sua situação. Respondemos com
+                brevidade e discrição.
               </p>
             </div>
-            <Button asChild size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+            <Button
+              asChild
+              size="lg"
+              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+            >
               <Link href="/contactos">
                 Contactar Agora
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -119,5 +136,5 @@ export default function ServicosPage() {
         </div>
       </section>
     </>
-  )
+  );
 }
