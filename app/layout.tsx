@@ -11,11 +11,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Patrícia Nibra, Nuno Estves & Associados SP RL - Sociedade de Agentes de Execução",
+  title: "PNNE - Agentes de Execução",
   description:
     "Sociedade de Agentes de Execução  - Competência, Rigor, Celeridade e acompanhamento profissional.",
   keywords: "Acrescentar: Execuções, Cobranças",
+  icons: {
+    icon: "/images/logo-pnne.png",
+    apple: "/images/logo-pnne.png",
+  },
 };
 
 export const viewport: Viewport = {

@@ -11,7 +11,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Serviços | Patrícia Nibra & Nuno Esteves",
+  title: "PNNE - Serviços",
   description:
     "Conheça os nossos serviços de execução: Agente de Execução, Tramitação processual nas ações executivas, notificações e citações em processo declarativo, notificações judiciais avulsas, notificações extra-judiciais, procedimentos especiais e pré-executivos (pepex), encarregados de venda em processos de inventário e outros, Apoio jurídico.",
 };

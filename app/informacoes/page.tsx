@@ -11,14 +11,14 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Informações Úteis | Patrícia Nibra & Nuno Esteves",
+  title: "PNNE - Informações Úteis",
   description:
     "Perguntas frequentes sobre processos executivos. Esclareça as suas dúvidas sobre execuções, documentos necessários e prazos.",
 };
 
 const faqs = [
   {
-    question: "Como iniciar um processo executivo?",
+    question: "Como iniciar um processo executivo?",  
     answer:
       "Para instaurar uma ação executiva é necessário dispor de um título executivo (sentença judicial, contrato com força executiva, livrança, entre outros) e recorrer a um mandatário - advogado ou solicitador - que apresente o requerimento executivo. O Agente de Execução é posteriormente nomeado para tramitar o processo.",
   },

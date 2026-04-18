@@ -4,7 +4,7 @@ import { ContactForm } from "@/components/contact-form";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contactos | Patrícia Nibra & Nuno Esteves",
+  title: "PNNE - Contactos",
   description:
     "Entre em contacto com a nossa sociedade de agentes de execução. Estamos disponíveis para esclarecer as suas dúvidas.",
 };

@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/page-header";
 import { Target, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Sociedade | Patrícia Nibra & Nuno Esteves",
+  title: "PNNE - Sociedade",
   description:
     "Conheça a nossa sociedade de agentes de execução. Quem somos, a nossa missão, valores e equipa.",
 };
