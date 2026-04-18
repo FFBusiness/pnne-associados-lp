@@ -28,15 +28,16 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff15_1px,transparent_1px),linear-gradient(to_bottom,#ffffff15_1px,transparent_1px)] bg-[size:3rem_3rem]" />
       </div>
       <div className="relative z-10 mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-5xl text-center">
           {/* <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-primary-foreground/10">
             <Scale className="h-7 w-7" />
           </div>*/}
-          <h1 className="text-pretty text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
-            Patrícia Nibra, Nuno Esteves
-            <br />
-            & <br />
-            Associados
+          <h1 className="text-pretty text-4xl font-semibold tracking-tight sm:text-5xl lg:text-5xl xl:text-6xl">
+            <span className="block md:whitespace-nowrap">
+              {"Patrícia Nibra, Nuno\u00A0Esteves"}
+            </span>
+            <span className="block">{"&"}</span>
+            <span className="block">Associados</span>
           </h1>
           <p className="mt-4 text-lg font-medium text-primary-foreground/90 sm:text-xl">
             Sociedade de Agentes de Execução, SP, RL

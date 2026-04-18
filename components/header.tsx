@@ -51,7 +51,7 @@ function ExecutionAgentsInfo({
         className={cn(
           "font-semibold uppercase leading-tight tracking-wide text-foreground",
           compact
-            ? "text-[0.6875rem] md:text-xs lg:text-sm"
+            ? "text-xs md:text-sm lg:text-[0.9375rem]"
             : "text-sm sm:text-base",
         )}
       >
@@ -59,9 +59,9 @@ function ExecutionAgentsInfo({
       </p>
       <ul
         className={cn(
-          "mt-1 leading-snug text-muted-foreground",
+          "mt-1.5 leading-snug text-muted-foreground",
           compact
-            ? "space-y-1 text-[0.625rem] md:text-[0.6875rem] lg:text-xs"
+            ? "space-y-1.5 text-[0.7rem] md:text-xs lg:text-sm"
             : "space-y-1 text-sm sm:text-[0.9375rem]",
         )}
       >
@@ -83,30 +83,30 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/88 backdrop-blur-md supports-[backdrop-filter]:bg-background/75">
-      <div className="mx-auto flex min-h-20 max-w-6xl items-center justify-between py-2 pl-4 pr-2 sm:min-h-24 sm:pl-6 sm:pr-3 md:min-h-[9rem] md:grid md:grid-cols-[auto_1fr_auto] md:items-center md:gap-2 md:py-3 md:pl-6 md:pr-2 lg:min-h-[10rem] lg:gap-3 lg:pl-7 lg:pr-1 xl:min-h-[10.5rem] xl:pl-8 xl:pr-1">
+      <div className="mx-auto flex min-h-20 max-w-6xl items-center justify-between py-2 pl-4 pr-2 sm:min-h-24 sm:pl-6 sm:pr-3 md:min-h-[9.25rem] md:grid md:grid-cols-[auto_1fr_auto] md:items-center md:gap-2 md:py-3 md:pl-6 md:pr-2 lg:min-h-[10.25rem] lg:gap-3 lg:pl-7 lg:pr-1 xl:min-h-[11rem] xl:pl-8 xl:pr-1">
         {/* Logo */}
         <Link
           href="/"
-          className="relative block aspect-square w-[3.75rem] shrink-0 justify-self-start sm:w-[4.375rem] md:w-[5.625rem] lg:w-[6.25rem] xl:w-[7.5rem]"
+          className="relative block aspect-square w-[4.558rem] shrink-0 justify-self-start sm:w-[5.317rem] md:w-[6.838rem] lg:w-[7.597rem] xl:w-[9.117rem]"
         >
           <Image
             src="/images/logo-pnne.png"
             alt="P.Nibra, N.Esteves & Associados — Sociedade de Agentes de Execução SP RL"
             fill
             className="object-contain object-center"
-            sizes="(max-width: 640px) 60px, (max-width: 768px) 70px, (max-width: 1024px) 90px, (max-width: 1280px) 100px, 120px"
+            sizes="(max-width: 640px) 73px, (max-width: 768px) 85px, (max-width: 1024px) 109px, (max-width: 1280px) 122px, 146px"
             priority
           />
         </Link>
 
         {/* Desktop — links centrados entre logótipo e agentes */}
-        <nav className="hidden w-full min-w-0 flex-wrap items-center justify-center gap-x-0.5 gap-y-1 md:flex lg:gap-x-1">
+        <nav className="hidden w-full min-w-0 flex-wrap items-center justify-center gap-x-1 gap-y-1 md:flex lg:gap-x-1.5">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
               className={cn(
-                "whitespace-nowrap px-2 py-2 text-sm font-medium transition-colors hover:text-foreground lg:px-3",
+                "whitespace-nowrap px-2 py-2 text-sm font-medium transition-colors hover:text-foreground md:text-base lg:px-3",
                 pathname === item.href
                   ? "text-foreground"
                   : "text-muted-foreground",
